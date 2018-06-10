@@ -1,4 +1,4 @@
-#基于IAT hook的文件隐藏工具
+# 基于IAT hook的文件隐藏工具
 
 - 基本原理
 
@@ -17,8 +17,8 @@
 
       - 搜索“find”关键词，猜测查看文件时可能用到了两个api。
 
-        - ![text](img\2.png)
-        - ![text](img\1.png)
+        - ![text](img/2.PNG)
+        - ![text](img/1.PNG)
 
       - 通过分析猜测，可得知这两个api在遍历文件时应该使用了FindFirstFile和FindNextFile。
 
@@ -69,12 +69,12 @@
 - 程序运行效果
 
   - hook之前，D:\\test文件夹下的文件
-    - ![test](img\5.png)
+    - ![test](img/5.PNG)
   - 对cmd.exe进行hook
     - 自动遍历当前可执行程序，找到cmd.exe，获得其进程PID
-      - ![text](img\3.png)
+      - ![text](img/3.PNG)
   - 查看D:\\test文件夹下文件
-    - ![text](img\4.png)
+    - ![text](img/4.PNG)
 
 - 遇到的问题
 
